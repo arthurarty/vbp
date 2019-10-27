@@ -1,0 +1,8 @@
+{% extends 'authentication/nbase.html' %}
+{% block content %}
+<div class="alert alert-success text-center" id="success" role="alert">
+    <h3>Account created</h3>
+    <p>We have sent you a verification email to {{user.email}}.</p>
+    <p>Please verify to continue.</p>
+</div>
+{% endblock %}
