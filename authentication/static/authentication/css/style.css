@@ -1,0 +1,14 @@
+#success {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#error {
+    height: 300px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+#email_verification {
+    padding-top: 8px;
+}

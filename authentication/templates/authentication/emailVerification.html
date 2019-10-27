@@ -1,0 +1,18 @@
+{% extends 'authentication/nbase.html' %}
+{% block content %}
+    <div class="container text-center">
+        <h3>
+            Email Verified.
+        </h3>
+        <p>
+            We have sent you a text message with a code. Please fill in the code in the form below.
+        </p>
+        <form action="{% url 'authentication:verify'%}" method="POST">
+            {% csrf_token %}
+            <label for="code">Verification code:</label>
+            <input type="text" class="form-control" placeholder="00000" name="code" required>
+            <input type="hidden" value="{{user.phone_number}}" name="phone_number" style="display:none;">
+            <button type="submit" class="btn btn-lg btn-primary btn-block" style="margin-top:8px;">Submit</button>
+        </form>
+    </div>
+{% endblock %}

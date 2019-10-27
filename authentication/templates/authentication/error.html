@@ -1,0 +1,13 @@
+{% extends 'authentication/nbase.html' %}
+{% block content %}
+    <div class="container text-center" id="error">
+        <div class="alert alert-danger" id="email_verification">
+            <h3>
+                Ooops!
+            </h3>
+            <p>
+                {{error}}
+            </p>
+        </div>
+    </div>
+{% endblock %}
