@@ -133,7 +133,7 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 AUTH_USER_MODEL = 'authentication.User'
 
 LOGIN_URL = '/login/'
-LOGIN_REDIRECT_URL = '/policies/'
+LOGIN_REDIRECT_URL = '/profile/'
 LOGOUT_REDIRECT_URL = '/login/'
 
 PASSWORD_RESET_TIMEOUT_DAYS = 2
